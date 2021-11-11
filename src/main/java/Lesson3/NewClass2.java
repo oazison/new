@@ -5,9 +5,9 @@ public class NewClass2 {
         System.out.println(factorial(3));
     }
 
-    public static int factorial(int a){
-        int b =1;
-        while (a > 0){
+    public static int factorial(int a) {
+        int b = 1;
+        while (a > 0) {
             b = b * a--;
         }
         return b;
