@@ -39,7 +39,7 @@ public class NewClass {
     }
 
     public static int non(int[] a) {
-        int b=0;
+        int b = 0;
         for (int i = 0; i < a.length; i++) {
             b = b + a[i];
         }
