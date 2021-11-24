@@ -14,14 +14,13 @@ public class NewClass {
         int[] array = mas(z);
         System.out.println("Максимальное число массива: " + max(array));
         System.out.println("Минимальное число массива: " + min(array));
-        System.out.println("Средне арифметическое число массива: " + non(array));
-
+        System.out.println("Среднее арифметическое число массива: " + non(array));
     }
 
     public static int[] mas(int v) {
         int[] arr = new int[v];
         double n;
-        int c = 0;
+        int c;
         for (int i = 0; i < v; i++) {
             n = Math.random() * 100;
             c = (int) n;
@@ -42,7 +41,7 @@ public class NewClass {
     }
 
     public static int non(int[] a) {
-        int b = 0;
+        int b=0;
         for (int i = 0; i < a.length; i++) {
             b = b + a[i];
         }
