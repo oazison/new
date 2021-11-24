@@ -19,11 +19,9 @@ public class NewClass {
 
     public static int[] mas(int v) {
         int[] arr = new int[v];
-        double n;
-        int c;
         for (int i = 0; i < v; i++) {
-            n = Math.random() * 100;
-            c = (int) n;
+            double n = Math.random() * 100;
+            int c = (int) n;
             arr[i] = c;
         }
         System.out.println(Arrays.toString(arr));
