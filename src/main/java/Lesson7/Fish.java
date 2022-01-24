@@ -2,12 +2,13 @@ package Lesson7;
 
 public class Fish extends Animal {
 
-    public Fish(String name, int swim) {
+    private static final int MAX_SWIM=1200;
+
+    public Fish(String name) {
         this.name = name;
-        this.swim = swim;
     }
 
-    public void run(int arg) {
+    public static void run(int arg) {
         System.out.println(name + " не умеет бегать.");
     }
 }

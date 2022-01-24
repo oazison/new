@@ -2,12 +2,13 @@ package Lesson7;
 
 public class Cat extends Animal {
 
-    public Cat(String name, int run) {
+    private static final int MAX_RUN=150;
+
+    public Cat(String name) {
         this.name = name;
-        this.run = run;
     }
 
-    public void swim(int arg) {
+    public static void swim(int arg) {
         System.out.println(name + " не умеет плавать.");
     }
 }

@@ -2,9 +2,10 @@ package Lesson7;
 
 public class Dog extends Animal {
 
-    public Dog(String name, int run, int swim) {
+    private static final int MAX_RUN=300;
+    private static final int MAX_SWIM=120;
+
+    public Dog(String name) {
         this.name = name;
-        this.run = run;
-        this.swim = swim;
     }
 }

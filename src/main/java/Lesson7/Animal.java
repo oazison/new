@@ -1,35 +1,27 @@
 package Lesson7;
 
 public abstract class Animal {
-    String name;
-    int run;
-    int swim;
+    static  String name;
+    private static final int MAX_RUN = 0;
+    private static final int MAX_SWIM =0;
 
-    public void run(int arg) {
-        if (arg <= run) {
+    public static void run(int arg) {
+        if (arg <= MAX_RUN) {
             System.out.println(name + " пробежал " + arg + " метров");
         } else {
-            System.out.println(name + " больше " + run + " метров пробежать не может.");
+            System.out.println(name + " больше " + MAX_RUN + " метров пробежать не может.");
         }
     }
 
-    public void swim(int arg) {
-        if (arg <= swim) {
+    public static void swim(int arg) {
+        if (arg <= MAX_SWIM) {
             System.out.println(name + " пробежал " + arg + " м.");
         } else {
-            System.out.println(name + " больше " + swim + " метров проплыть не может.");
+            System.out.println(name + " больше " + MAX_SWIM + " метров проплыть не может.");
         }
     }
 
     public String getName() {
         return name;
-    }
-
-    public int getRun() {
-        return run;
-    }
-
-    public int getSwim() {
-        return swim;
     }
 }
